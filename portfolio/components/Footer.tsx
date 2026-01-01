@@ -36,7 +36,7 @@ export default function Footer() {
 
         {showScrollTop && (
           <button
-            className="fixed card-shadow bottom-4 sm:bottom-6 md:bottom-8 right-4 sm:right-6 md:right-8 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 text-(--text-color) flex items-center justify-center cursor-pointer card-shadow rounded-sm border-2 border-(--border-color) hover:text-(--alter-color) z-50 transition-transform"
+            className="fixed card-shadow bottom-4 sm:bottom-6 md:bottom-8 right-4 sm:right-6 md:right-8 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 text-(--text-color) flex items-center justify-center cursor-pointer card-shadow rounded-sm border-2 border-(--border-color) bg-(--alter-color) hover:text-(--alter-color) z-80 transition-transform"
             onClick={scrollToTop}
             aria-label="Scroll to top"
           >

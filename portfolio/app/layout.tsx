@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Archivo_Black, EB_Garamond, Space_Mono, Tagesschrift } from "next/font/google";
+import { Archivo_Black, EB_Garamond, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 
+// Add favicon to metadata
 export const metadata: Metadata = {
-  title: "Ridoy Dey",
+  title: "Portfolio | Ridoy Dey",
   description: "Cloud & DevOps Engineer",
+  icons: {
+    icon: "/icons/ridoydey.ico",
+    shortcut: "/icons/ridoydey.ico",
+    apple: "/icons/ridoydey.ico", 
+  },
 };
 
 const ebGaramond = EB_Garamond({
