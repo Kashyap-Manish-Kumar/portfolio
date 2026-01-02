@@ -65,7 +65,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card-shadow border-color border-3 rounded-lg p-4 sm:p-5 md:p-6 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300"
+              className="group project-card-shadow border-color border-3 rounded-lg p-4 sm:p-5 md:p-6 flex flex-col justify-between"
             >
               {/* Project Info */}
               <div>
@@ -100,7 +100,7 @@ export default function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 sm:mt-6 inline-flex hover:text-(--text-color) hover:bg-orange-700 items-center justify-center gap-2 px-3 sm:px-4 py-2 border-2 border-color rounded-md text-sm sm:text-md font-semibold transition-all duration-200"
+                className="mt-4 sm:mt-6 inline-flex group-hover:text-(--alter-color) dark:group-hover:text-white group-hover:bg-gray-700 transition-all duration-300 items-center justify-center gap-2 px-3 sm:px-4 py-2 border-2 rounded-md text-sm sm:text-md font-semibold"
               >
                 <span>View on GitHub</span>
                 <FaGithub size={18} />
