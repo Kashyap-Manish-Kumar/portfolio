@@ -5,12 +5,12 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 
 // Add favicon to metadata
 export const metadata: Metadata = {
-  title: "Portfolio | Ridoy Dey",
-  description: "Cloud & DevOps Engineer",
+  title: "Portfolio | Manish Kashyap",
+  description: "Full Stack Developer",
   icons: {
-    icon: "/icons/ridoydey.ico",
-    shortcut: "/icons/ridoydey.ico",
-    apple: "/icons/ridoydey.ico", 
+    icon: "/icons/docker.svg", // change if needed
+    shortcut: "/icons/docker.svg",
+    apple: "/icons/docker.svg",
   },
 };
 
