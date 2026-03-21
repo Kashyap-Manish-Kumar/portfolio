@@ -110,11 +110,11 @@ export default function Skills() {
     return () => clearInterval(interval);
   }, [isPaused]);
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.targetTouches[0].clientX;
   };
 
-  const handleTouchMove = (e) => {
+ const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
     touchEndX.current = e.targetTouches[0].clientX;
   };
 

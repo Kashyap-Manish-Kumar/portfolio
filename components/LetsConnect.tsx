@@ -36,21 +36,25 @@ const socialLinks = [
 
 export default function LetsConnect() {
 
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [loading, setLoading] = useState(false);
 
   
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
+      e.preventDefault();
+      setLoading(true);
 
-    emailjs
-      .sendForm(
-        "service_2a2mhgk",
-        "template_syl5k6n",
-        formRef.current,
-        "oIDt_BpZGhe7Ls8Ni"
-      )
+      if (!formRef.current) return;
+
+      const form = formRef.current;
+
+      emailjs
+        .sendForm(
+          "service_2a2mhgk",
+          "template_syl5k6n",
+          form,
+          "oIDt_BpZGhe7Ls8Ni"
+        )
       .then(
         () => {
 
@@ -58,16 +62,16 @@ export default function LetsConnect() {
         "service_2a2mhgk",
         "template_xjzy86k", // ✅ your actual template ID
         {
-          name: formRef.current.name.value,
-          email: formRef.current.email.value,
-          message: formRef.current.message.value,
+          name: (form.elements.namedItem("name") as HTMLInputElement).value,
+          email: (form.elements.namedItem("email") as HTMLInputElement).value,
+          message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
         },
         "oIDt_BpZGhe7Ls8Ni"
       );
 
 
           alert("Message sent ✅");
-          formRef.current.reset();
+          form.reset();
           setLoading(false);
         },
         (error) => {
@@ -142,7 +146,7 @@ export default function LetsConnect() {
             <textarea
               name="message"
               placeholder="Message"
-              rows="3"
+              rows={3}
               required
               className="bg-white/10 border border-color rounded-md px-4 py-3 outline-none text-[var(--text-color)]  placeholder-gray-400 focus:border-pink-500"
             />
