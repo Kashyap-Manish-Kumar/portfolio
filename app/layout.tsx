@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Archivo_Black, EB_Garamond, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
-import type { Metadata } from "next";
+
 import SWRegister from "@/components/SWRegister";
 
 // Add favicon to metadata
