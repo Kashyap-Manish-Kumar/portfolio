@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo_Black, EB_Garamond, Space_Mono } from "next/font/google";
 import "./globals.css";
+import InstallButton from "@/components/InstallButton";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 
 import SWRegister from "@/components/SWRegister";
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <SWRegister />
+          <InstallButton />   {/* 👈 ADD THIS */}
           {children}
         </ThemeProvider>
       </body>

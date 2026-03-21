@@ -6,6 +6,8 @@ import { HiSun } from "react-icons/hi";
 import { AiFillMoon } from "react-icons/ai";
 import Link from "next/link";
 import { FaTimes } from "react-icons/fa";
+import InstallButton from "@/components/InstallButton";
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,6 +105,8 @@ export default function Header() {
           >
             {theme === "light" ? <AiFillMoon size={24} /> : <HiSun size={24} />}
           </button>
+           
+          <InstallButton />   {/* 👈 ADD THIS */}
         </nav>
 
         {/* ✅ MOBILE RIGHT SIDE (CLEAN) */}
@@ -169,7 +173,7 @@ export default function Header() {
             >
               {theme === "light" ? <AiFillMoon size={28} /> : <HiSun size={28} />}
             </button>
-
+             <InstallButton />
             <button
               className="absolute top-2 right-2 text-(--text-color) p-2 bg-(--primary-color) rounded-full"
               onClick={closeMenu}
