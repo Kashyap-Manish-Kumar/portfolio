@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 import { Archivo_Black, EB_Garamond, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import type { Metadata } from "next";
+import SWRegister from "@/components/SWRegister";
 
 // Add favicon to metadata
 export const metadata: Metadata = {
   title: "Portfolio | Manish Kashyap",
   description: "Full Stack Developer",
+  manifest: "/manifest.json",
   icons: {
-    icon: "/icons/my-icon.ico", // change if needed
+    icon: "/icons/my-icon.ico",
     shortcut: "/icons/my-icon.ico",
     apple: "/icons/my-icon.ico",
   },
@@ -43,7 +46,10 @@ export default function RootLayout({
       className={`${ebGaramond.variable} ${spaceMono.variable} ${archivoBlack.variable}`}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <SWRegister />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
