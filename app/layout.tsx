@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: "Portfolio | Manish Kashyap",
   description: "Full Stack Developer",
   icons: {
-    icon: "/icons/docker.svg", // change if needed
-    shortcut: "/icons/docker.svg",
-    apple: "/icons/docker.svg",
+    icon: "/icons/my-icon.svg", // change if needed
+    shortcut: "/icons/my-icon.svg",
+    apple: "/icons/my-icon.svg",
   },
 };
 
