@@ -113,9 +113,9 @@ export default function Header() {
         <div className="md:hidden flex items-center gap-3">
 
           {/* SECTION NAME */}
-          <span className="text-sm font-semibold text-[var(--text-color)] opacity-80 capitalize">
-            {activeSection || "portfolio"}
-          </span>
+         <span className="text-2xl font-bold text-[var(--text-color)] opacity-90 capitalize">
+  {activeSection || "portfoli"}
+</span>
 
           {/* MENU BUTTON */}
           <button
