@@ -106,7 +106,7 @@ export default function Header() {
             {theme === "light" ? <AiFillMoon size={24} /> : <HiSun size={24} />}
           </button>
            
-          <InstallButton />   {/* 👈 ADD THIS */}
+             {/* 👈 ADD THIS */}
         </nav>
 
         {/* ✅ MOBILE RIGHT SIDE (CLEAN) */}

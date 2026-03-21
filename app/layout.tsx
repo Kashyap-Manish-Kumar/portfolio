@@ -49,7 +49,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <SWRegister />
-          <InstallButton />   {/* 👈 ADD THIS */}
+            {/* 👈 ADD THIS */}
           {children}
         </ThemeProvider>
       </body>
