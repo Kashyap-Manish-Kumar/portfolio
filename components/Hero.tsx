@@ -94,7 +94,7 @@ export default function Hero() {
   <img src="/icons/spring.svg" className="w-4 sm:w-5 md:w-7 float" />
   <img src="/icons/node.svg" className="w-5 sm:w-6 md:w-8 float" />
   <img src="/icons/aws.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/mysql.svg" className="w-5 sm:w-6 md:w-8 float" />
+ 
   <img src="/icons/mongodb.svg" className="w-5 sm:w-6 md:w-8 float" />
   <img src="/icons/docker.svg" className="w-5 sm:w-6 md:w-8 float" />
   <img src="/icons/eclipse.svg" className="w-5 sm:w-6 md:w-8 float" />
