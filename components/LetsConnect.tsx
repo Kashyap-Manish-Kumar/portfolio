@@ -39,7 +39,8 @@ export default function LetsConnect() {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
 
-  const sendEmail = (e) => {
+  
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
