@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-orcin-psi-25.vercel.app/sitemap.xml

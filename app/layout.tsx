@@ -6,15 +6,50 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 
 import SWRegister from "@/components/SWRegister";
 
-// Add favicon to metadata
+// ✅ Updated SEO metadata (ONLY improvement, nothing else changed)
 export const metadata: Metadata = {
-  title: "Portfolio | Manish Kashyap",
-  description: "Full Stack Developer",
+  title: "Manish Kashyap | Full Stack Developer Portfolio",
+  description:
+    "Manish Kashyap is a Full Stack Developer skilled in React, Next.js, Node.js, and modern web technologies. Explore projects, skills, and experience.",
+  keywords: [
+    "Manish Kashyap",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Portfolio",
+    "Web Developer Portfolio",
+  ],
+  authors: [{ name: "Manish Kashyap" }],
+  creator: "Manish Kashyap",
+
   manifest: "/manifest.json",
+
   icons: {
     icon: "/icons/my-icon.ico",
     shortcut: "/icons/my-icon.ico",
     apple: "/icons/my-icon.ico",
+  },
+
+  // ✅ Added Open Graph (for Google + social media preview)
+  openGraph: {
+    title: "Manish Kashyap Portfolio",
+    description: "Full Stack Developer Portfolio",
+    url: "https://portfolio-orcin-psi-25.vercel.app",
+    siteName: "Manish Portfolio",
+    images: [
+      {
+        url: "/icons/my-icon.ico",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  // ✅ Allow indexing
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -49,7 +84,32 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <SWRegister />
-            {/* 👈 ADD THIS */}
+         
+
+        {/* ✅ ADD THIS HERE */}
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Manish Kashyap",
+          url: "https://portfolio-orcin-psi-25.vercel.app",
+          sameAs: [
+            "https://github.com/Kashyap-Manish-Kumar",
+            "https://www.linkedin.com/in/manish-kashyap-22154732b/"
+          ],
+          jobTitle: "Full Stack Developer",
+          worksFor: {
+            "@type": "Organization",
+            name: "Freelancer"
+          }
+        }),
+      }}
+    />
+
+
+
           {children}
         </ThemeProvider>
       </body>
