@@ -1,6 +1,5 @@
 "use client";
 
-import { HiArrowDown } from "react-icons/hi";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaFileDownload } from "react-icons/fa";
@@ -45,26 +44,27 @@ export default function Hero() {
             </h1>
 
             <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl default-font font-bold -mt-2">
-              <span className="text-(--primary-color)">|</span>
+              <span className="text-[var(--primary-color)]">|</span>
               <span className="ml-2">
                 {roles[currentRole]}
               </span>
             </h2>
 
             <div className="mt-2 md:mt-4">
-              <p className="text-base sm:text-lg md:text-2xl text-(--primary-color) tagline-font uppercase tracking-widest">
+              <p className="text-base sm:text-lg md:text-2xl text-[var(--primary-color)] tagline-font uppercase tracking-widest">
                 SPECIALIZED IN
               </p>
+
               <p className="text-sm sm:text-base md:text-xl font-semibold leading-relaxed">
                 Building scalable Desktop and Mobile applications, developing AI/ML solutions, designing REST APIs, and integrating cloud-based systems.
               </p>
             </div>
 
             <Link
-              href="/docs/Manish-Resume.pdf"
+              href="/docs/manish-finale-resume-123.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="button-shadow rounded-md mt-4 px-5 sm:px-8 py-3 sm:py-4 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-(--alter-color)"
+              className="button-shadow rounded-md mt-4 px-5 sm:px-8 py-3 sm:py-4 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-[var(--alter-color)]"
             >
               <FaFileDownload size={20} />
               DOWNLOAD RESUME
@@ -72,12 +72,11 @@ export default function Hero() {
           </div>
 
           {/* IMAGE SECTION */}
-         <div className="relative flex justify-center items-start md:items-center order-first md:order-last mb-2 md:mb-0">
+          <div className="relative flex justify-center items-start md:items-center order-first md:order-last mb-2 md:mb-0">
 
             {/* ✅ FIXED: responsive image size */}
             <Image
-              className="w-40 sm:w-60 md:w-80 lg:w-[26rem] object-cover
-                        drop-shadow-[0_0_0_6px_white]"
+              className="w-40 sm:w-60 md:w-80 lg:w-[26rem] object-cover drop-shadow-[0_0_0_6px_white]"
               src="/images/profile_pic.png"
               alt="Profile Image"
               width={400}
@@ -85,25 +84,82 @@ export default function Hero() {
               priority
             />
 
-            {/* ✅ FIXED: hide icons on small screens */}
+            {/* ICONS */}
             <div className="absolute right-2 top-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
 
-  <img src="/icons/react.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/github.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/javascript.svg" className="w-4 sm:w-5 md:w-7 float" />
-  <img src="/icons/spring.svg" className="w-4 sm:w-5 md:w-7 float" />
-  <img src="/icons/node.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/aws.svg" className="w-5 sm:w-6 md:w-8 float" />
- 
-  <img src="/icons/mongodb.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/docker.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/eclipse.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/javascript.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/github.svg" className="w-5 sm:w-6 md:w-8 float" />
-  <img src="/icons/react.svg" className="w-5 sm:w-6 md:w-8 float" />
-  
+              <img
+                src="/icons/react.svg"
+                alt="React"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
 
-</div>
+              <img
+                src="/icons/github.svg"
+                alt="GitHub"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+              <img
+                src="/icons/javascript.svg"
+                alt="JavaScript"
+                className="w-4 sm:w-5 md:w-7 float"
+              />
+
+              <img
+                src="/icons/spring.svg"
+                alt="Spring"
+                className="w-4 sm:w-5 md:w-7 float"
+              />
+
+              <img
+                src="/icons/node.svg"
+                alt="Node.js"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+              <img
+                src="/icons/aws.svg"
+                alt="AWS"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+              <img
+                src="/icons/mongodb.svg"
+                alt="MongoDB"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+              <img
+                src="/icons/docker.svg"
+                alt="Docker"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+              <img
+                src="/icons/eclipse.svg"
+                alt="Eclipse"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+              <img
+                src="/icons/javascript.svg"
+                alt="JavaScript"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+              <img
+                src="/icons/github.svg"
+                alt="GitHub"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+              <img
+                src="/icons/react.svg"
+                alt="React"
+                className="w-5 sm:w-6 md:w-8 float"
+              />
+
+            </div>
           </div>
         </div>
       </div>

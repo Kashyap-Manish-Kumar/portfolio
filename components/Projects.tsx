@@ -6,16 +6,16 @@ import { FaChevronLeft, FaChevronRight, FaGithub } from "react-icons/fa";
 
 const projectData = [
   {
-    title: "CI/CD Pipeline",
-    name: "1. GitHub Actions Pipeline",
+    title: "Turing Body",
+    name: "1. Turing Body",
     description:
-      "Automated build, test, and deployment pipeline using GitHub Actions and Docker.Automated build, test, and deployment pipeline using GitHub Actions and Docker.Automated build, test, and deployment pipeline using GitHub Actions and Docker.Automated build, test, and deployment pipeline using GitHub Actions and Docker.Automated build, test, and deployment pipeline using GitHub Actions and Docker.",
-    icons: ["/icons/github.svg", "/icons/docker.svg", "/icons/bash.svg"],
-    techStack: ["GitHub Actions", "Docker", "Bash"],
-    video: "https://www.youtube.com/watch?v=your_video_id",
-    github: "#",
-    image: "/images/project_first.png",
-    launch: "https://your-live-site.com",
+      "Developed an AI-powered MRI analysis system for Multiple Sclerosis lesion detection using U-Net CNN architecture. Trained the model on 1,451 MRI scan images and lesion masks with 80/20 train-validation split.Achieved approximately 99.6% validation accuracy during lesion segmentation model evaluation. Used MongoDB Atlas to store prediction records, scan metadata, and diagnostic results.Implemented model training using TensorFlow with Dice Loss, Adam optimizer, and early stopping techniques.",
+    icons: ["/icons/github.svg", "/icons/spring.svg", "/icons/mongodb.svg", "/icons/react.svg"],
+    techStack: ["GitHub Actions", "Spring Boot", "mongodb", "React"],
+    video: "https://ai-ms-detection-system.vercel.app/",
+    github: "https://github.com/Kashyap-Manish-Kumar/ai-ms-detection-system",
+    image: "/images/turingbody.png",
+    launch: "https://ai-ms-detection-system.vercel.app/",
   },
   {
     title: "Kubernetes Setup",
