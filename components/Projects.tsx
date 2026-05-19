@@ -12,7 +12,7 @@ const projectData = [
       "Developed an AI-powered MRI analysis system for Multiple Sclerosis lesion detection using U-Net CNN architecture. Trained the model on 1,451 MRI scan images and lesion masks with 80/20 train-validation split.Achieved approximately 99.6% validation accuracy during lesion segmentation model evaluation. Used MongoDB Atlas to store prediction records, scan metadata, and diagnostic results.Implemented model training using TensorFlow with Dice Loss, Adam optimizer, and early stopping techniques.",
     icons: ["/icons/github.svg", "/icons/spring.svg", "/icons/mongodb.svg", "/icons/react.svg"],
     techStack: ["GitHub Actions", "Spring Boot", "mongodb", "React"],
-    video: "https://drive.google.com/drive/my-drive",
+    video: "https://drive.google.com/file/d/12OfF7BGiRpRtTdfPn3nYv4F_vaftZ9nq/view",
     github: "https://github.com/Kashyap-Manish-Kumar/ai-ms-detection-system",
     image: "/images/turingbody.png",
     launch: "https://ai-ms-detection-system.vercel.app/",
