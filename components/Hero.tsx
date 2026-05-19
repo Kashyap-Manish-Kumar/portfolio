@@ -61,14 +61,14 @@ export default function Hero() {
             </div>
 
             <Link
-              href="public/docs/manish-240303149002.pdf" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-shadow rounded-md mt-4 px-5 sm:px-8 py-3 sm:py-4 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-[var(--alter-color)]"
-            >
-              <FaFileDownload size={20} />
-              DOWNLOAD RESUME
-            </Link>
+  href="/docs/manish-240303149002.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="button-shadow rounded-md mt-4 px-5 sm:px-8 py-3 sm:py-4 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-[var(--alter-color)]"
+>
+  <FaFileDownload size={20} />
+  DOWNLOAD RESUME
+</Link>
           </div>
 
           {/* IMAGE SECTION */}
