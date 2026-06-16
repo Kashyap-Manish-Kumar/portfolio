@@ -21,7 +21,7 @@ const projectData = [
     title: "Examiner",
     name: "2. Examiner",
     description:
-      "Examiner is an AI-powered mock interview platform designed to simulate real-world technical and HR interviews. The system generates personalized interview questions based on either a candidate's uploaded resume or selected subject area, creating a dynamic and adaptive interview experience.",
+      "Examiner is an AI-powered mock interview platform designed to simulate real-world technical and HR interviews. The system generates personalized interview questions based on either a candidate's uploaded resume or selected subject area, creating a dynamic and adaptive interview experience.The platform features multiple AI interviewers represented through interactive 3D avatars with voice synthesis and lip-sync animations, providing an immersive interview environment",
     icons: ["/icons/kubernetes.svg", "/icons/prometheus.svg", "/icons/grafana.svg"],
     techStack: ["Groq_API", "React", "Python"],
     video: "https://drive.google.com/file/d/1SEOUEIMP8BkzMuKH0wD3Yi5AWgXdVSi6/view?usp=sharing",
