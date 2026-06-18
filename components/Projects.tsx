@@ -29,18 +29,6 @@ const projectData = [
     image: "/images/project-4.png",
     launch: "https://examiner-wheat.vercel.app/",
   },
-  {
-    title: "Terraform Infra",
-    name: "3. AWS Infrastructure",
-    description:
-      "A real-time chatroom platform with host-controlled private rooms. Create timed sessions, set participant limits, and share images instantly - all powered by Socket.IO for seamless live messaging. Join rooms via meeting code or email invitation(no signup required), perfect for quick group chats or virtual hangouts.",
-    icons: ["/icons/terraform.svg", "/icons/aws.svg", "/icons/linux.svg"],
-    techStack: ["Terraform", "AWS", "Linux"],
-    video: "https://www.youtube.com/watch?v=your_video_id",
-    github: "#",
-    image: "/images/project-third.png",
-    launch: "https://your-live-site.com",
-  },
 ];
 
 export default function Projects() {
