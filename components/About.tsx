@@ -31,9 +31,7 @@ export default function About() {
 
             <div className="px-4 sm:px-5 py-4 sm:py-5">
               <p className="text-sm sm:text-base leading-relaxed text-center opacity-90 group-hover:opacity-100 transition">
-                I am a Computer Science undergraduate specializing in AI & Machine Learning,
-                with a strong foundation in software development and problem solving.
-                I enjoy building scalable web applications and writing clean, maintainable code.
+              I am a Software Development Engineer Intern building and improving real-world software products. I enjoy solving practical engineering problems, understanding systems deeply, and writing clean, maintainable code that works reliably in production environments.
               </p>
             </div>
           </div>
@@ -50,9 +48,7 @@ export default function About() {
 
             <div className="px-4 sm:px-5 py-4 sm:py-5">
               <p className="text-sm sm:text-base leading-relaxed text-center opacity-90 group-hover:opacity-100 transition">
-                I have experience developing full-stack applications with Java backend using
-                Spring Boot, MongoDB, and REST APIs. I have also worked on AI-based projects,
-                including Multiple Sclerosis detection using MRI scans.
+               I build full-stack applications with a strong focus on backend development, APIs, databases, authentication, and system integration. My experience includes React, TypeScript, Node.js, Express.js, PostgreSQL, Prisma, Java, Spring Boot, Docker, and AI-powered applications. 
               </p>
             </div>
           </div>
@@ -69,9 +65,7 @@ export default function About() {
 
             <div className="px-4 sm:px-5 py-4 sm:py-5">
               <p className="text-sm sm:text-base leading-relaxed text-center opacity-90 group-hover:opacity-100 transition">
-                I am focused on backend engineering, system design, and AI integration.
-                I continuously learn new technologies to build scalable, intelligent,
-                and user-friendly applications that create meaningful impact.
+                I am focused on becoming a strong software engineer with deeper expertise in backend engineering, system design, and scalable applications. I want to take greater ownership of real-world engineering problems while exploring how AI can be integrated into practical software systems.
               </p>
             </div>
           </div>

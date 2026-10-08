@@ -2,6 +2,12 @@
 .DS_Store
 Thumbs.db
 
+app.zip
+components.zip
+contexts.zip
+
+*.zip
+
 # Editor files
 .vscode/
 .idea/

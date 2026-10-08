@@ -8,9 +8,9 @@ import Link from "next/link";
 export default function Hero() {
 
   const roles = [
-    "AI / ML Developer",
-    "Backend Developer",
-    "Mobile Developer",
+    "Software Developer",
+    "IT Consultant",
+    "System Designer ",
     "Software Developer"
   ];
 
@@ -56,13 +56,14 @@ export default function Hero() {
               </p>
 
               <p className="text-sm sm:text-base md:text-xl font-semibold leading-relaxed">
-                Building scalable Desktop and Mobile applications, developing AI/ML solutions, designing REST APIs, and integrating cloud-based systems.
-              </p>
+  Building real-world full-stack applications, developing backend systems and
+  REST APIs, integrating databases and authentication.
+</p>
             </div>
 
             <Link
               
-  href="/docs/Manish_Resume_001.pdf"
+  href="/docs/Manish-Confirmed.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="button-shadow rounded-md mt-4 px-5 sm:px-8 py-3 sm:py-4 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-[var(--alter-color)]"

@@ -69,7 +69,7 @@ export default function Header() {
           <Link href="/" className="flex justify-center items-center gap-2">
             
             <div className="w-8 h-8 md:w-10 md:h-10 bg-black border-2 border-(--border-color) flex items-center justify-center font-bold text-sm md:text-xl logo-shadow rounded-sm text-white">
-              20
+              21
             </div>
 
             <div className="flex flex-col leading-tight">
